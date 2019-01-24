@@ -1,0 +1,15 @@
+# .gitignore for intellij,java,maven,windows,osx
+
+### Intellij ###
+.idea
+.idea_modules/
+/out/
+
+### log ###
+logs/
+*.log
+
+*.iws
+*.iml
+
+test/
