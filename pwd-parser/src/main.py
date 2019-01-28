@@ -6,6 +6,7 @@
 
 import pyautogui as pag
 import gui.Mouse
+import time
 
 dictRawFile = 'dict.t'
 dictFile = 'dict1.t'
@@ -29,7 +30,14 @@ def handle_dict():
 
 
 def main():
+    time.sleep(2)
+    x, y = pag.position()
+    pag.click(470, 719)
+    pag.typewrite('ls')
+    pag.press('enter')
+    exit()
     handle_dict()
+
     gui.Mouse.Mouse.click_center()
     rf1 = open(dictFile, 'r')
     for line1 in rf1:
@@ -38,7 +46,7 @@ def main():
         for line2 in rf2:
             password = line1 + line2.strip('\n')
             print(password)
-#            pag.typewrite(password)
+#           pag.typewrite(password)
     rf1.close()
 
 
