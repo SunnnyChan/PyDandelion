@@ -20,9 +20,8 @@ class MyApp(cli.Application):
             pag.click(450, 450)
             pag.typewrite(line.strip('\n'))
             pag.press('enter')
-            time.sleep(2)
+            time.sleep(3)
 
 
 if __name__ == '__main__':
     MyApp.run()
-
